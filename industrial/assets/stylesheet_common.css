@@ -1,0 +1,406 @@
+html{
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(30deg, black , rgba(0, 0, 0, 0)), url("../images/finance-industry.jpg");
+    background-repeat: no-repeat, no-repeat, repeat-y;
+    background-size: auto, cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+header{
+    position: relative;
+    background-image: linear-gradient(30deg, black , rgba(0, 0, 0, 0)), url("../images/7952290-petrochemical-plant-at-night.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover;
+    background-position: left, left, center;
+    height: 500px;
+    width: 100%;
+}
+header .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+header .content h1{
+    text-transform: uppercase;
+    left: 50%;
+    padding: 0;
+    font-family: 'Raleway';
+    color: whitesmoke;
+    font-size: 5em;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+    text-shadow: -1px 0 0 black, 0 -1px 0 black, 1px 0 0 black, 0 1px 0 black, 1px 1px 2px dimgray;
+}
+header .content blockquote{
+    margin: auto;
+    color: gray;
+    width: 50%;
+    font-family: 'Raleway';
+    opacity: 0.8;
+    font-size: 1.5em;
+    text-shadow: -1px 0 0 white, 0 -1px 0 white, 1px 0 0 white, 0 1px 0 white, 1px 1px 2px dimgray;
+}
+nav{
+    min-height: 40px;
+    background: #111111;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 3px black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 100;
+}
+nav .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+nav .content a{
+    font-family: 'Adamina';
+    font-weight: 600;
+    padding: 10px;
+    float: left;
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: -1px 0 0 black, 0 1px 0 black, 1px 0 0 black, 0 -1px 0 black;
+}
+nav .content a.active{
+    background-color: #232323;
+    border-top: 1px solid gray;
+}
+nav .content a:not(.active):not(.menu):hover{
+    color: gray;
+    background-color: #2B2B2B;
+    border-bottom: 1px solid black;
+}
+
+nav .content a.menu{
+    display: none;
+}
+
+div.mainContent{
+    font-family: "Raleway";
+    width: 90%;
+    background-color: rgba(211, 211, 211, 0.7);
+    text-align: center;
+    padding: 50px;
+    display: table-cell;
+    overflow: hidden;
+    clear: both;
+    color:white;
+    text-shadow: -1px 0 0 black, 0 1px 0 black, 1px 0 0 black, 0 -1px 0 black;
+}
+.mainContent h1{
+    font-weight: lighter;
+    font-stretch: ultra-expanded;
+}
+.mainContent blockquote{
+    font-family: 'Adamina';
+    font-size: 1em;
+    font-weight: lighter;
+    margin: auto;
+}
+.mainContent .flexBreak{
+    flex-basis: 100%;
+    height: 20px;
+}
+.mainContent .cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.mainContent .card{
+    padding: 20px;
+    float:left;
+    display: inline-block;
+    min-height: 350px;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 20px;
+    border: 1px solid black;
+    background-color: rgb(255, 238, 238);
+    box-shadow: -1px -1px 5px 0 darkslategray, 1px 1px 5px 0 darkslategray;
+    border-radius: 5px;
+    color: darkslategray;
+    text-shadow: none;
+}
+
+.mainContent .card img{
+    width: 100%;
+    height: 200px;
+}
+
+.mainContent .card blockquote{
+    width: 100%;
+}
+
+.mainContent .cards::after{
+    display: table;
+    clear: both;
+    content: '';
+}
+
+section.banner{
+    position: relative;
+    color: lightgray;
+    font-family: Raleway;
+    text-align: center;
+    height: 200px;
+    padding: 20px;
+}
+
+section.banner h1{
+    padding: 20px;
+}
+section.banner p{
+    width: 80%;
+    margin: auto;
+}
+
+
+section.banner .content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.mainContent .vision{
+    width: 90vw;
+}
+
+.mainContent .vision p{
+    width: 60%;
+    margin: auto;
+}
+
+.mainContent .clients{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.mainContent .clients .card{
+    padding: 20px;
+    min-width: 350px;
+    min-height: 200px;
+    box-shadow: none;
+    border: none;
+}
+
+.mainContent .clients .card .opinion{
+    border-left: 5px solid gray;
+    color: gray;
+    padding: 20px
+}
+.mainContent .clients .card .opinion blockquote{
+
+}
+
+.mainContent .clients .card .client{
+    position: relative;
+    overflow: hidden;
+}
+.mainContent .clients .card .client::after{
+    display: table-cell;
+    clear: both;
+    content: "";
+}
+.mainContent .clients .card .client img{
+    width: 50px;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 50px;
+    border: 1px solid black;
+    float: left;
+    display: inline-block;
+}
+
+.mainContent .clients .card .client p{
+    position: absolute;
+    display: inline-block;
+    font-size: 0.9em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    float: right;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #111111;
+    padding: 30px;
+    overflow: hidden;
+}
+
+footer .aboutUs{
+    max-width: 30%;
+}
+footer .aboutUs .content{
+    display: inline-block;
+    color: lightgray;
+    margin: auto;
+}
+footer .aboutUs .content h2{
+    font-family: Adamina;
+    font-weight: lighter;
+}
+footer .aboutUs .content blockquote{
+    text-align: left;
+    font-size: 14px;
+}
+footer .questions{
+    padding-left: 40px;
+}
+footer .questions h2{
+    font-family: Adamina;
+    font-weight: lighter;
+    color: white;
+}
+footer .questions a{
+    padding-top: 20px;
+    display: block;
+    color: gray;
+    font-family: Raleway;
+    text-decoration: none;
+    font-weight: 900;
+    border-bottom: 1px solid gray;
+}
+
+footer .questions a:hover{
+    color: orangered;
+    border-bottom: 1px solid lightgray;
+}
+
+footer .contactUs{
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+footer .contactUs h2{
+    font-family: Adamina;
+    font-weight: lighter;
+    color: white;
+    padding-bottom: 20px;
+}
+footer .contactUs img{
+    width: 20px;
+    height: 20px;
+}
+footer .questions:after, footer .aboutUs:after{
+    display: table-cell;
+    clear: both;
+    content: "";
+}
+
+footer .contactUs a.icon{
+    padding: 6px 20px;
+    text-decoration: none;
+    font-family: Raleway;
+    color: white;
+    font-weight: bolder;
+    display: block;
+}
+footer .contactUs a.icon span{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px
+}
+
+@media screen and (max-width: 768px){
+    header .content h1{
+        padding: 0;
+        font-family: 'Raleway';
+        color: whitesmoke;
+        font-size: 3em;
+        font-weight: lighter;
+        text-shadow: -1px 0 0 black, 0 -1px 0 black, 1px 0 0 black, 0 1px 0 black, 1px 1px 2px dimgray;
+    }
+    nav .content blockquote{
+        font-size: 0.5em;
+    }
+    nav .content{
+        position: static;
+        top: auto;
+        left: auto;
+        transform: translate(0%, 0%);
+        text-align: center;
+    }
+    nav .content a{
+        float: none;
+        display: block;
+    }
+    nav .content a:not(:first-child){
+        float: none;
+        display: none;
+    }
+    nav .content a.active{
+        background: #111111;
+        border-bottom: 1px solid gray;
+    }
+    nav .content a.menu{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    nav.responsive .content a{
+        float: none;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .mainContent .card{
+        width: calc(50% - 50px);
+    }
+    .mainContent .clients .card{
+        min-width: 350px;
+        width: calc(50% - 50px);
+    }
+}
+@media screen and (max-width: 768px){
+    .mainContent .clients .card{
+        min-width: 350px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .mainContent blockquote{
+        font-family: 'Adamina';
+        font-size: 1em;
+        font-weight: lighter;
+        margin: auto;
+        width: 80%;
+    }
+    .mainContent .cards{
+        max-width: 1024px;
+        margin: auto;
+    }
+    .mainContent .card{
+        width: calc(33.3% - 50px);
+    }
+    .mainContent .clients .card{
+        min-width: 350px;
+        width: calc(33.3% - 50px);
+    }
+}
+
+
